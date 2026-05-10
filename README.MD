@@ -65,6 +65,11 @@ The model is trained using the MNIST dataset:
     Grayscale handwritten digits (0–9)
     Image size: 28×28 pixels
 
+Model Evaluation:
+
+    The model was trained for 5 epochs on the MNIST dataset. The training results show high accuracy (~99%) and a well-optimized loss curve:
+
+    ![Training Performance](model/training_plot.png)
 
 Installation
 
