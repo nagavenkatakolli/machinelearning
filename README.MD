@@ -15,20 +15,20 @@ Probability table and visualization
 Image preprocessing pipeline
 Project Structure
 mnist_project/
-│
-├── model/
-│   └── mnist_cnn_model.keras
-│
-├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── model.py
-│   └── utils.py
-│
-├── app.py
-├── train_model.py
-├── requirements.txt
-└── README.md
+    │
+    ├── model/
+    │   └── mnist_cnn_model.keras
+    │
+    ├── src/
+    │   ├── data_loader.py
+    │   ├── preprocessing.py
+    │   ├── model.py
+    │   └── utils.py
+    │
+    ├── app.py
+    ├── train_model.py
+    ├── requirements.txt
+    └── README.md
 Technologies Used
 Python
 TensorFlow / Keras
@@ -43,13 +43,13 @@ The model uses a Convolutional Neural Network (CNN) for image classification.
 Typical architecture:
 
 Input Layer (28x28x1)
-→ Conv2D
-→ MaxPooling2D
-→ Conv2D
-→ MaxPooling2D
-→ Flatten
-→ Dense
-→ Output Layer (10 classes)
+    → Conv2D
+    → MaxPooling2D
+    → Conv2D
+    → MaxPooling2D
+    → Flatten
+    → Dense
+    → Output Layer (10 classes)
 Dataset
 
 The model is trained using the MNIST dataset:
@@ -63,16 +63,17 @@ Installation
 Clone the repository:
 
 git clone https://github.com/nagavenkatakolli/machinelearning.git
+
 cd machinelearning
 
 Create a virtual environment:
 
-python -m venv .venv
-source .venv/bin/activate
+    python -m venv .venv
+    source .venv/bin/activate
 
 Install dependencies:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 Train the Model
 
 Run:
@@ -81,34 +82,35 @@ python train_model.py
 
 The trained model will be saved in:
 
-model/mnist_cnn_model.keras
+    model/mnist_cnn_model.keras
+
 Run the Streamlit App
 
 Start the web application:
 
-streamlit run app.py
+    streamlit run app.py
 
 Open in browser:
 
 http://localhost:8501
 Image Preprocessing
 
-Uploaded images are preprocessed before prediction:
+Uploaded images are preprocessed before prediction: Below are the steps how image preprocessed before prediction
 
-Convert image to grayscale
-Resize to 28×28
-Auto contrast adjustment
-Normalize pixel values
-Reshape for CNN input
-Example Workflow
-Upload a handwritten digit image
-Image is preprocessed
-CNN model predicts the digit
-Application displays:
-Predicted digit
-Confidence score
-Probability scores for all digits
-Limitations
+    Convert image to grayscale
+    Resize to 28×28
+    Auto contrast adjustment
+    Normalize pixel values
+    Reshape for CNN input
+    Example Workflow
+    Upload a handwritten digit image
+    Image is preprocessed
+    CNN model predicts the digit
+    Application displays:
+    Predicted digit
+    Confidence score
+    Probability scores for all digits
+    Limitations
 
 This model is trained only on the MNIST dataset.
 
@@ -141,6 +143,13 @@ Example:
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+Limitations:
+As mentioned if the background is noisy or not centered there is limitation 
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+
 Author
 
 Nagavenkata Kolli
