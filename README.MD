@@ -6,15 +6,15 @@ The application allows users to upload an image of a handwritten digit (0–9) a
 
 Features:
 
-High Accuracy CNN: Built with TensorFlow/Keras using a multi-layer convolutional approach.
+    High Accuracy CNN: Built with TensorFlow/Keras using a multi-layer convolutional approach.
 
-Smart Preprocessing: Includes an automated logic that handles grayscale conversion, resizing, and contrast adjustment.
+    Smart Preprocessing: Includes an automated logic that handles grayscale conversion, resizing, and contrast adjustment.
 
-Background Inversion: Automatically detects light/dark backgrounds to ensure the input matches the model's training data (white digit on black background).
+    Background Inversion: Automatically detects light/dark backgrounds to ensure the input matches the model's training data (white digit on black background).
 
-Real-time Insights: View prediction confidence, probability tables, and visual bar charts in the web UI.
+    Real-time Insights: View prediction confidence, probability tables, and visual bar charts in the web UI.
 
-Training Visuals: Automatically generates accuracy and loss plots during the training phase.
+    Training Visuals: Automatically generates accuracy and loss plots during the training phase.
 
 Project Structure:
 
