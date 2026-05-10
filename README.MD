@@ -141,6 +141,13 @@ Example:
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+Limitations:
+As mentioned if the background is noisy or not centered there is limitation 
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+
 Author
 
 Nagavenkata Kolli
