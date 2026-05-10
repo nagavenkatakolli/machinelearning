@@ -69,7 +69,7 @@ Model Evaluation:
 
     The model was trained for 5 epochs on the MNIST dataset. The training results show high accuracy (~99%) and a well-optimized loss curve:
 
-    ![Training Performance](model/training_plot.png)
+    ![alt text](image-6.png)
 
 Installation
 
