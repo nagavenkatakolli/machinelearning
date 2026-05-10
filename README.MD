@@ -25,7 +25,7 @@ Project Structure:
     |     │   └── training_plot.png      # Visualized training history              |
     |     ├── src/                                                                  |
     |     │   ├── data_loader.py         # MNIST dataset acquisition                |
-    |     │   ├── preprocessing.py       # Data normalization &amp; inversion logic |
+    |     │   ├── preprocessing.py       # Data normalization and inversion logic |
     |     │   ├── model.py               # CNN architecture definition              |
     |     │   └── utils.py               # Model saving and plotting helpers        |
     |     ├── app.py                     # Streamlit web application                |
@@ -102,52 +102,49 @@ Open in browser:
     http://localhost:8501
     Image Preprocessing
 
-| Uploaded images are preprocessed before prediction:                 |
-|---------------------------------------------------------------------|
-| Below are the steps how image preprocessed before prediction        |
-|                                                                     |
-| Convert image to grayscale - Removes color interference             |
-| Resize to 28×28                                                     |
-| Auto contrast adjustment - sharpen the digit against the background |
-| Normalize pixel values                                              |
-| Reshape for CNN input                                               |
-| Example Workflow                                                    |
-| Upload a handwritten digit image                                    |
-| Image is preprocessed                                               |
-| CNN model predicts the digit                                        |
-| Application displays:                                               |
-| Predicted digit                                                     |
-| Confidence score                                                    |
-| Probability scores for all digits                                   |
-| Limitations                                                         |
-|                                                                     |
-| This model is trained only on the MNIST dataset.                    |
+Uploaded images are preprocessed before prediction:
+Below are the steps how image preprocessed before prediction
 
-| Predictions work best when:     |
-|---------------------------------|
-|                                 |
-|     digit is large and centered |
-|     background is plain         |
-|     image is tightly cropped    |
-|     digit has strong contrast   |
+    Convert image to grayscale - Removes color interference
+    Resize to 28×28
+    Auto contrast adjustment - sharpen the digit against the background
+    Normalize pixel values
+    Reshape for CNN input
+    Example Workflow
+    Upload a handwritten digit image
+    Image is preprocessed
+    CNN model predicts the digit
+    Application displays:
+    Predicted digit
+    Confidence score
+    Probability scores for all digits
+    Limitations
 
-| Known Limitations:                                                                  |
-|-------------------------------------------------------------------------------------|
-| As shown in the evaluation photos, accuracy may decrease if the digit is off-center |
-| or the background is heavily textured (e.g., notebook lines).                       |
-|                                                                                     |
-| noisy backgrounds                                                                   |
-| notebook lines                                                                      |
-| shadows                                                                             |
-| textured surfaces                                                                   |
-| very small digits                                                                   |
-| Future Improvements                                                                 |
-| Better preprocessing pipeline                                                       |
-| Automatic digit segmentation                                                        |
-| Support for multiple digits                                                         |
-| Data augmentation                                                                   |
-| Higher accuracy CNN architectures                                                   |
+This model is trained only on the MNIST dataset.
 
+Predictions work best when:
+
+    1.digit is large and centered
+    2.background is plain
+    3.image is tightly cropped
+    4.digit has strong contrast
+
+
+Known Limitations:
+As shown in the evaluation photos, accuracy may decrease if the digit is off-center
+or the background is heavily textured (e.g., notebook lines).
+
+    noisy backgrounds
+    notebook lines
+    shadows
+    textured surfaces
+    very small digits
+    Future Improvements
+    Better preprocessing pipeline
+    Automatic digit segmentation
+    Support for multiple digits
+    Data augmentation
+    Higher accuracy CNN architectures
 
 Screenshots:
 
