@@ -15,20 +15,20 @@ Probability table and visualization
 Image preprocessing pipeline
 Project Structure
 mnist_project/
-│
-├── model/
-│   └── mnist_cnn_model.keras
-│
-├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── model.py
-│   └── utils.py
-│
-├── app.py
-├── train_model.py
-├── requirements.txt
-└── README.md
+    │
+    ├── model/
+    │   └── mnist_cnn_model.keras
+    │
+    ├── src/
+    │   ├── data_loader.py
+    │   ├── preprocessing.py
+    │   ├── model.py
+    │   └── utils.py
+    │
+    ├── app.py
+    ├── train_model.py
+    ├── requirements.txt
+    └── README.md
 Technologies Used
 Python
 TensorFlow / Keras
