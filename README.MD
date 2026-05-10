@@ -83,15 +83,21 @@ Installation
 
         pip install -r requirements.txt
 
-Train the Model
+Train the Model 
+    This is for information purpose , incase if you want to build a model 
+    but the repo already has a model saved you can skip the following step
 
     Run:python train_model.py
 
 The trained model will be saved in:
+    In the repo this alredy you do not have to train again, trainig is optional
 
     model/mnist_cnn_model.keras
 
 Run the Streamlit App   
+
+    Once you install requirements.txt, you can direcly start streamlit using following command
+    and should be able to upload image
 
     Start the web application:
 

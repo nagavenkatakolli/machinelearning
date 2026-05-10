@@ -4,3 +4,5 @@ pillow>=10.0.0
 opencv-python>=4.8.0
 matplotlib>=3.7.0
 streamlit>=1.30.0
+pandas>=2.0.0     
+protobuf>=3.20.3    # TensorFlow 2.15.0 requires protobuf 3.20.3 or higher
